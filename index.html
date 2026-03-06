@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lab VR Scene</title>
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+
+    <!-- Sky -->
+    <a-sky color="#87CEEB"></a-sky>
+
+    <!-- Lighting -->
+    <a-light type="ambient" color="#ffffff"></a-light>
+    <a-light type="directional" position="1 3 2"></a-light>
+
+    <!-- Objects -->
+    <a-box position="-4 1 -5" rotation="0 45 0"
+           color="#4CC3D9" depth="2" height="2" width="2">
+    </a-box>
+
+    <a-sphere position="0 1 -5"
+              radius="1.2"
+              color="#EF2D5E">
+    </a-sphere>
+
+    <a-cylinder position="4 1 -5"
+                radius="1"
+                height="2"
+                color="#FFC65D">
+    </a-cylinder>
+
+    <!-- Ground -->
+    <a-plane position="0 0 -5"
+             rotation="-90 0 0"
+             width="40"
+             height="40"
+             color="#7BC8A4">
+    </a-plane>
+
+    <!-- Image Banner -->
+    <a-image src="MS_Static (1).png"
+             position="0 5 -10"
+             width="12"
+             height="3">
+    </a-image>
+
+    <!-- Text -->
+    <a-text value="Young Innovators STEM Lab"
+            position="0 7 -10"
+            align="center"
+            color="white"
+            width="12">
+    </a-text>
+
+    <!-- Camera -->
+    <a-camera position="0 1.6 0"></a-camera>
+
+  </a-scene>
+</body>
+</html>
